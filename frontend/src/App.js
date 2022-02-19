@@ -5,7 +5,6 @@ import ArticleList from './components/article/ArticleList';
 import Article from './components/article/Article';
 import Error from './components/error/Error';
 import Header from './components/header/Header';
-import SignUp from './components/signup/SignUp';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path = '/about' element={<About />} />
         <Route path='/articlelist' element={< ArticleList />} />
         <Route path='/article/:name' element={<Article />} />
-        <Route path='/signup' element={<SignUp />} />
         <Route path='*' element={<Error />} />
       </Routes>
    </>
